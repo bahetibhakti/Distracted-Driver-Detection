@@ -12,4 +12,4 @@ radio and talking to passenger.
 ![AUC_dataset](https://user-images.githubusercontent.com/6376680/76943354-39a45980-6925-11ea-9038-f70408092ed2.png)
 
 Reference:\
-[1] Yehya Abouelnaga, Hesham M. Eraqi, and Mohamed N. Moustafa, "Real-time distracted driver posture classification",CoRR, abs/1706.09498, 2017.
+[1] Yehya Abouelnaga, Hesham M. Eraqi, and Mohamed N. Moustafa, "Real-time distracted driver posture classification", CoRR, abs/1706.09498, 2017.
