@@ -109,7 +109,7 @@ def read_and_normalize_train_data():
     print('Reshape...')
     train_data = train_data.transpose((0, 1, 2, 3))
 
-    
+    # Normalise the train data
     print('Convert to float...')
     train_data = train_data.astype('float16')
     mean_pixel = [80.857, 81.106, 82.928]
@@ -149,13 +149,15 @@ def read_and_normalize_test_data():
     test_data = np.array(test_data, dtype=np.uint8)
     test_data = test_data.transpose((0, 1, 2, 3))
 
+    # Normalise the test data data
+
     test_data = test_data.astype('float16')
     mean_pixel = [80.857, 81.106, 82.928]
-#
+
     test_data[:, :, :, 0] -= mean_pixel[0]
-#
+
     test_data[:, :, :, 1] -= mean_pixel[1]
-#
+
     test_data[:, :, :, 2] -= mean_pixel[2]
 
     test_target = np_utils.to_categorical(test_target, 10)
