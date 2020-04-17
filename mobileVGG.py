@@ -125,11 +125,11 @@ def read_and_normalize_train_data():
 
     train_target = np_utils.to_categorical(train_target, 10)
     
-    # Shuffle experiment START !!!
+    # Shuffle experiment START !!
     perm = permutation(len(train_target))
     train_data = train_data[perm]
     train_target = train_target[perm]
-    # Shuffle experiment END !!!
+    # Shuffle experiment END !!
     
     print('Train shape:', train_data.shape)
     print(train_data.shape[0], 'train samples')
