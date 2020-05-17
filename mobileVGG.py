@@ -39,7 +39,7 @@ from depthwise_conv2d import DepthwiseConvolution2D
 use_cache = 1
 
 def load_train():
-    '''Give path of .csv file of training data below'''
+    '''Give path of the dataset .csv file of training data below'''
     df = pd.read_csv(r'/home/gpu3/Desktop/mobileVGG/auc.distracted.driver.train.csv')
     x = df.iloc[:,0]
     y = df.iloc[:,1]
